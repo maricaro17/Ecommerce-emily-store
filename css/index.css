@@ -1,0 +1,16 @@
+.menu {
+  font-size: x-large;
+  font-family: fantasy;
+  text-transform: uppercase;
+  color: #af3e64;
+  letter-spacing: 2px;
+}
+.bg-emily-store {
+  background-color: #af3e64;
+}
+.bg-emily-store-light {
+    background-color: #f6c6c2;
+}
+.text-color-emily-store{
+    color: #af3e64;
+}

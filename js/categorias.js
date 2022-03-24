@@ -10,11 +10,6 @@ const getCategories = async () => {
   return response.json();
 };
 
-const getCategoriesById = async (id) => {
-  const response = await fetch(`${urlBase}/${endpoint}/${id}`);
-  return response.json();
-};
-
 const rowCategory = document.getElementById("row-category");
 
 const titleCategory = document.getElementById("title-category");

@@ -14,3 +14,7 @@
 .text-color-emily-store{
     color: #af3e64;
 }
+.card-image {
+  width: 16rem;
+  height: 16rem !important;
+}

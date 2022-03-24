@@ -1,7 +1,12 @@
-import { cargarCarrito } from "./getCarrito";
+import { cargarCarrito } from "./getCarrito.js";
 
 const urlBase = "https://emily-store-api.herokuapp.com";
+const itemListCar = document.getElementById("item-list-car");
 const form = document.getElementById("form-envio");
+const limpiarCarrito = (item) => {
+  localStorage.removeItem(item);
+  itemListCar.innerHTML = ""
+};
 const submit = async (e) => {
   e.preventDefault();
   if (form.checkValidity()) {
@@ -37,12 +42,14 @@ const submit = async (e) => {
         },
       });
       const result = await response.json();
+      limpiarCarrito("car");
+
       alert(`
              Su orden ha sido procesada exitosamente.
              numero de orden: ${result.id}
           `);
       form.classList.remove("was-validated");
-      localStorage.removeItem("car");
+
       form.reset();
       cargarCarrito();
     } catch (error) {

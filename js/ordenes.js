@@ -5,7 +5,7 @@ const itemListCar = document.getElementById("item-list-car");
 const form = document.getElementById("form-envio");
 const limpiarCarrito = (item) => {
   localStorage.removeItem(item);
-  itemListCar.innerHTML = ""
+  itemListCar.innerHTML = "";
 };
 const submit = async (e) => {
   e.preventDefault();

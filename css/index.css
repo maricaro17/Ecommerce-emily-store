@@ -9,12 +9,19 @@
   background-color: #af3e64;
 }
 .bg-emily-store-light {
-    background-color: #f6c6c2;
+  background-color: #f6c6c2;
 }
-.text-color-emily-store{
-    color: #af3e64;
+.text-color-emily-store {
+  color: #af3e64;
 }
 .card-image {
   width: 16rem;
   height: 16rem !important;
+}
+.btn-emily-store {
+  background-color: #af3e64;
+  color: white;
+}
+.font-count{
+  font-family: sans-serif !important;
 }
